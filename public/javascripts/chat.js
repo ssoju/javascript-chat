@@ -340,7 +340,6 @@ $(document).ready(function () {
                 cb(!this[hidden]);
         }
 
-        // set the initial state (but only if browser supports the Page Visibility API)
         if (document[hidden] !== undefined)
             onchange({type: document[hidden] ? "blur" : "focus"});
     };
